@@ -1,0 +1,48 @@
+/* QuesAndAns.css */
+
+/* Update the .container-fluid styles */
+.container-fluid {
+  background-image: url("https://img.freepik.com/premium-photo/faq-banner-design-question-mark-sign-banner-3d-rendering_118019-2153.jpg?size=626&ext=jpg&ga=GA1.1.1803636316.1701216000&semt=ais");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  overflow: hidden; /* Ensure the background image doesn't overflow */
+}
+
+/* Add a new class for the background overlay */
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1; /* Place it above the background image */
+}
+
+/* Update the .container styles */
+.container {
+  margin-top: 0;
+  position: relative;
+  z-index: 2; /* Set z-index to 2 to place it above the background overlay */
+}
+
+/* Update the .table styles */
+.table {
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust the alpha value for transparency */
+  position: relative;
+  z-index: 3; /* Set z-index to 3 to place it above the container and background overlay */
+}
+
+/* Update the .table-hover styles to make the hover background transparent */
+.table-hover tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Adjust the alpha value for hover transparency */
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Update the .table-hover styles for hover on td */
+.table-hover tbody tr:hover td {
+  font-size: 16px; /* Increase font size on hover */
+  /* Add any other styles to increase the size of the columns */
+}
